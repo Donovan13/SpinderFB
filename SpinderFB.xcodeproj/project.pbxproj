@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EA393C1CCD9B980078EE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA393B1CCD9B980078EE7B /* AppDelegate.swift */; };
+		09EA393E1CCD9B980078EE7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA393D1CCD9B980078EE7B /* ViewController.swift */; };
+		09EA39411CCD9B980078EE7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EA393F1CCD9B980078EE7B /* Main.storyboard */; };
+		09EA39431CCD9B980078EE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EA39421CCD9B980078EE7B /* Assets.xcassets */; };
+		09EA39461CCD9B980078EE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EA39441CCD9B980078EE7B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09EA39381CCD9B980078EE7B /* SpinderFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinderFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09EA393B1CCD9B980078EE7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09EA393D1CCD9B980078EE7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09EA39401CCD9B980078EE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09EA39421CCD9B980078EE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09EA39451CCD9B980078EE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09EA39471CCD9B980078EE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09EA39351CCD9B980078EE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09EA392F1CCD9B980078EE7B = {
+			isa = PBXGroup;
+			children = (
+				09EA393A1CCD9B980078EE7B /* SpinderFB */,
+				09EA39391CCD9B980078EE7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09EA39391CCD9B980078EE7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09EA39381CCD9B980078EE7B /* SpinderFB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09EA393A1CCD9B980078EE7B /* SpinderFB */ = {
+			isa = PBXGroup;
+			children = (
+				09EA393B1CCD9B980078EE7B /* AppDelegate.swift */,
+				09EA393D1CCD9B980078EE7B /* ViewController.swift */,
+				09EA393F1CCD9B980078EE7B /* Main.storyboard */,
+				09EA39421CCD9B980078EE7B /* Assets.xcassets */,
+				09EA39441CCD9B980078EE7B /* LaunchScreen.storyboard */,
+				09EA39471CCD9B980078EE7B /* Info.plist */,
+			);
+			path = SpinderFB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09EA39371CCD9B980078EE7B /* SpinderFB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09EA394A1CCD9B980078EE7B /* Build configuration list for PBXNativeTarget "SpinderFB" */;
+			buildPhases = (
+				09EA39341CCD9B980078EE7B /* Sources */,
+				09EA39351CCD9B980078EE7B /* Frameworks */,
+				09EA39361CCD9B980078EE7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinderFB;
+			productName = SpinderFB;
+			productReference = 09EA39381CCD9B980078EE7B /* SpinderFB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09EA39301CCD9B980078EE7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Kyle;
+				TargetAttributes = {
+					09EA39371CCD9B980078EE7B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4DLHFFRA86;
+					};
+				};
+			};
+			buildConfigurationList = 09EA39331CCD9B980078EE7B /* Build configuration list for PBXProject "SpinderFB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09EA392F1CCD9B980078EE7B;
+			productRefGroup = 09EA39391CCD9B980078EE7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09EA39371CCD9B980078EE7B /* SpinderFB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09EA39361CCD9B980078EE7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EA39461CCD9B980078EE7B /* LaunchScreen.storyboard in Resources */,
+				09EA39431CCD9B980078EE7B /* Assets.xcassets in Resources */,
+				09EA39411CCD9B980078EE7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09EA39341CCD9B980078EE7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EA393E1CCD9B980078EE7B /* ViewController.swift in Sources */,
+				09EA393C1CCD9B980078EE7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09EA393F1CCD9B980078EE7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EA39401CCD9B980078EE7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09EA39441CCD9B980078EE7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EA39451CCD9B980078EE7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09EA39481CCD9B980078EE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09EA39491CCD9B980078EE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09EA394B1CCD9B980078EE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpinderFB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Donovan.SpinderFB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09EA394C1CCD9B980078EE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpinderFB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Donovan.SpinderFB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09EA39331CCD9B980078EE7B /* Build configuration list for PBXProject "SpinderFB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EA39481CCD9B980078EE7B /* Debug */,
+				09EA39491CCD9B980078EE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09EA394A1CCD9B980078EE7B /* Build configuration list for PBXNativeTarget "SpinderFB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EA394B1CCD9B980078EE7B /* Debug */,
+				09EA394C1CCD9B980078EE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09EA39301CCD9B980078EE7B /* Project object */;
+}
