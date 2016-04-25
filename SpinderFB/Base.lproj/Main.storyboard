@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,6 +28,219 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="BqB-KU-eH7">
+            <objects>
+                <viewController id="wIS-IO-06P" customClass="ActivityViewController" customModule="Spinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Baq-Jj-pma"/>
+                        <viewControllerLayoutGuide type="bottom" id="NAK-Sw-Ye8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IOR-aO-0r9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Filter your Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-PO-Tw5">
+                                <rect key="frame" x="171" y="6" width="258" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="88" width="254" height="41"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FE3-Q8-0uQ">
+                                <rect key="frame" x="197" y="122" width="207" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="197" width="207" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="wIS-IO-06P" id="kQH-Zw-nRs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Distance" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-jU-mS9">
+                                <rect key="frame" x="197" y="84" width="207" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="241" width="207" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="wIS-IO-06P" id="Jeg-L3-Gx6"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0jh-Ly-Rf0">
+                                <rect key="frame" x="0.0" y="332" width="600" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" id="x6P-D0-QXf">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6P-D0-QXf" id="yaU-Hx-rAy">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="354" width="400" height="246"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="wIS-IO-06P" id="Hm1-JG-Mv8"/>
+                                    <outlet property="delegate" destination="wIS-IO-06P" id="6z4-zb-coD"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Activity Description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-Rp-sNt">
+                                <rect key="frame" x="50" y="200" width="501" height="71"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="279" width="360" height="67"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-bN-FKA">
+                                <rect key="frame" x="251" y="285" width="99" height="30"/>
+                                <state key="normal" title="Find Spinders!"/>
+                                <connections>
+                                    <action selector="findSpinderButtonTapped:" destination="wIS-IO-06P" eventType="touchUpInside" id="Nb0-eB-oez"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxR-Uc-xP7">
+                                <rect key="frame" x="197" y="46" width="207" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="149" width="207" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="wIS-IO-06P" id="9Nd-ik-6pF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home Town" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EdL-Fr-kUV">
+                                <rect key="frame" x="197" y="162" width="207" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3tf-jU-mS9" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="9ov-mS-CKP"/>
+                            <constraint firstItem="Irr-bN-FKA" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="KDF-9x-aok"/>
+                            <constraint firstItem="o4L-Rp-sNt" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="TU0-fs-t7B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o4L-Rp-sNt" secondAttribute="trailing" constant="29" id="UAY-ei-ECu"/>
+                            <constraint firstItem="Ih9-PO-Tw5" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="g8B-jS-xQr"/>
+                            <constraint firstItem="yxR-Uc-xP7" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="hjy-lc-kYI"/>
+                            <constraint firstItem="EdL-Fr-kUV" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="uxd-SG-u0c"/>
+                            <constraint firstItem="o4L-Rp-sNt" firstAttribute="leading" secondItem="IOR-aO-0r9" secondAttribute="leadingMargin" constant="30" id="v55-cJ-Aoo"/>
+                            <constraint firstItem="FE3-Q8-0uQ" firstAttribute="centerX" secondItem="IOR-aO-0r9" secondAttribute="centerX" id="yH8-4V-2sE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GenderTextField" destination="yxR-Uc-xP7" id="LAb-Wx-bSh"/>
+                        <outlet property="activityDescriptionTextView" destination="o4L-Rp-sNt" id="leQ-fd-BOk"/>
+                        <outlet property="ageTextField" destination="FE3-Q8-0uQ" id="ORF-o8-eWp"/>
+                        <outlet property="distanceTextField" destination="3tf-jU-mS9" id="sbH-Tj-3JN"/>
+                        <outlet property="homeTownTextField" destination="EdL-Fr-kUV" id="bpG-zn-sou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcr-Uc-W7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="387"/>
+        </scene>
+        <!--Spinders Collection View Controller-->
+        <scene sceneID="Rze-ZK-FLk">
+            <objects>
+                <collectionViewController id="LGc-iP-o9F" customClass="SpindersCollectionViewController" customModule="Spinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kpV-JY-xfx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c7S-Kr-kQX">
+                            <size key="itemSize" width="598" height="434"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gx1-6H-lcN" customClass="SpinderCell" customModule="Spinder" customModuleProvider="target">
+                                <rect key="frame" x="1" y="0.0" width="598" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="598" height="434"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name &amp; age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Biv-sI-Ep0">
+                                            <rect key="frame" x="179" y="154" width="241" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="kFb-gL-eZ5"/>
+                                                <constraint firstAttribute="width" constant="241" id="u8E-4o-oFs"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="98b-Qq-leG">
+                                            <rect key="frame" x="179" y="15" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="JqI-9D-ywk"/>
+                                                <constraint firstAttribute="width" constant="240" id="PEV-py-oA1"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="czO-WV-ll3">
+                                            <rect key="frame" x="179" y="183" width="240" height="128"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="7fL-ag-eij"/>
+                                                <constraint firstAttribute="width" constant="240" id="zko-GO-4gh"/>
+                                            </constraints>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-Ig-JMV">
+                                            <rect key="frame" x="179" y="334" width="103" height="30"/>
+                                            <state key="normal" title="DirectMessage"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-dp-Qag">
+                                            <rect key="frame" x="358" y="336" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Biv-sI-Ep0" firstAttribute="centerX" secondItem="gx1-6H-lcN" secondAttribute="centerX" id="7P0-wa-JA5"/>
+                                    <constraint firstItem="98b-Qq-leG" firstAttribute="top" secondItem="gx1-6H-lcN" secondAttribute="topMargin" constant="7" id="Ws8-t5-ZZk"/>
+                                    <constraint firstItem="czO-WV-ll3" firstAttribute="top" secondItem="Biv-sI-Ep0" secondAttribute="bottom" constant="8" id="djo-Wg-cOE"/>
+                                    <constraint firstItem="czO-WV-ll3" firstAttribute="centerX" secondItem="gx1-6H-lcN" secondAttribute="centerX" id="jiZ-a2-pZI"/>
+                                    <constraint firstItem="Biv-sI-Ep0" firstAttribute="top" secondItem="98b-Qq-leG" secondAttribute="bottom" constant="11" id="r6K-1y-bEV"/>
+                                    <constraint firstItem="98b-Qq-leG" firstAttribute="centerX" secondItem="gx1-6H-lcN" secondAttribute="centerX" id="xdQ-Dv-XTv"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="descriptionTextView" destination="czO-WV-ll3" id="Ljk-Pk-20J"/>
+                                    <outlet property="directMessage" destination="f3u-Ig-JMV" id="e38-Fe-c4i"/>
+                                    <outlet property="imageView" destination="98b-Qq-leG" id="jGs-9F-YWv"/>
+                                    <outlet property="nameAgeLabel" destination="Biv-sI-Ep0" id="Hhf-ae-cpS"/>
+                                    <outlet property="requestHangout" destination="vXc-dp-Qag" id="Bck-Ey-7au"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="LGc-iP-o9F" id="57h-XV-wV8"/>
+                            <outlet property="delegate" destination="LGc-iP-o9F" id="nWe-0W-iIF"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="spinderCollectionView" destination="kpV-JY-xfx" id="f8o-jx-TbQ"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hH-zH-CoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="387"/>
         </scene>
     </scenes>
 </document>
