@@ -10,13 +10,13 @@
 		094C05D61CCEAF1900A110D6 /* LoginParallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C05D51CCEAF1900A110D6 /* LoginParallax.swift */; };
 		094C05D81CCEB1BF00A110D6 /* ParallaxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C05D71CCEB1BF00A110D6 /* ParallaxItem.swift */; };
 		094C05DB1CCEB30000A110D6 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C05DA1CCEB30000A110D6 /* ActivityViewController.swift */; };
-		094C05DF1CCEB37200A110D6 /* PathMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C05DD1CCEB37200A110D6 /* PathMenu.swift */; };
-		094C05E01CCEB37200A110D6 /* PathMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C05DE1CCEB37200A110D6 /* PathMenuItem.swift */; };
 		09EA393C1CCD9B980078EE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA393B1CCD9B980078EE7B /* AppDelegate.swift */; };
 		09EA393E1CCD9B980078EE7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA393D1CCD9B980078EE7B /* ViewController.swift */; };
 		09EA39411CCD9B980078EE7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EA393F1CCD9B980078EE7B /* Main.storyboard */; };
 		09EA39431CCD9B980078EE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EA39421CCD9B980078EE7B /* Assets.xcassets */; };
 		09EA39461CCD9B980078EE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EA39441CCD9B980078EE7B /* LaunchScreen.storyboard */; };
+		09EA81D11CCFCAB7001A99EA /* PathMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA81CF1CCFCAB7001A99EA /* PathMenu.swift */; };
+		09EA81D21CCFCAB7001A99EA /* PathMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA81D01CCFCAB7001A99EA /* PathMenuItem.swift */; };
 		E8DD3D9382E601D2F61C7CDA /* Pods_SpinderFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD084DAA220DC43FE1FEF9D /* Pods_SpinderFB.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +24,6 @@
 		094C05D51CCEAF1900A110D6 /* LoginParallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginParallax.swift; sourceTree = "<group>"; };
 		094C05D71CCEB1BF00A110D6 /* ParallaxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxItem.swift; sourceTree = "<group>"; };
 		094C05DA1CCEB30000A110D6 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		094C05DD1CCEB37200A110D6 /* PathMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PathMenu.swift; path = "../../button test/button test/PathMenu.swift"; sourceTree = "<group>"; };
-		094C05DE1CCEB37200A110D6 /* PathMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PathMenuItem.swift; path = "../../button test/button test/PathMenuItem.swift"; sourceTree = "<group>"; };
 		09EA39381CCD9B980078EE7B /* SpinderFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinderFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EA393B1CCD9B980078EE7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09EA393D1CCD9B980078EE7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +31,8 @@
 		09EA39421CCD9B980078EE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09EA39451CCD9B980078EE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09EA39471CCD9B980078EE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EA81CF1CCFCAB7001A99EA /* PathMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenu.swift; sourceTree = "<group>"; };
+		09EA81D01CCFCAB7001A99EA /* PathMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenuItem.swift; sourceTree = "<group>"; };
 		9CD084DAA220DC43FE1FEF9D /* Pods_SpinderFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinderFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACAB920C7B1BEBDB1C84190 /* Pods-SpinderFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinderFB.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinderFB/Pods-SpinderFB.release.xcconfig"; sourceTree = "<group>"; };
 		B894314713C2F1B1587B98FD /* Pods-SpinderFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinderFB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinderFB/Pods-SpinderFB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 		094C05E11CCEB37A00A110D6 /* Animated Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				094C05DD1CCEB37200A110D6 /* PathMenu.swift */,
-				094C05DE1CCEB37200A110D6 /* PathMenuItem.swift */,
+				09EA81CF1CCFCAB7001A99EA /* PathMenu.swift */,
+				09EA81D01CCFCAB7001A99EA /* PathMenuItem.swift */,
 			);
 			name = "Animated Buttons";
 			sourceTree = "<group>";
@@ -251,10 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EA393E1CCD9B980078EE7B /* ViewController.swift in Sources */,
-				094C05E01CCEB37200A110D6 /* PathMenuItem.swift in Sources */,
 				094C05D61CCEAF1900A110D6 /* LoginParallax.swift in Sources */,
+				09EA81D21CCFCAB7001A99EA /* PathMenuItem.swift in Sources */,
+				09EA81D11CCFCAB7001A99EA /* PathMenu.swift in Sources */,
 				09EA393C1CCD9B980078EE7B /* AppDelegate.swift in Sources */,
-				094C05DF1CCEB37200A110D6 /* PathMenu.swift in Sources */,
 				094C05DB1CCEB30000A110D6 /* ActivityViewController.swift in Sources */,
 				094C05D81CCEB1BF00A110D6 /* ParallaxItem.swift in Sources */,
 			);
