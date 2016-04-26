@@ -41,12 +41,12 @@ class ViewController: UIViewController {
                     } else {
                         print("logged in ")
                         
-                        let newUser = [
-                            "provider": authData.provider,
-                            "profileImageURL": authData.providerData["profileImageURL"] as? NSString as? String,
-                            "displayName": authData.providerData["displayName"] as? NSString as? String
-                        ]
-                        myRootRef.childByAppendingPath("users").childByAppendingPath(authData.uid).setValue(newUser)
+                        let newUser = ["provider": authData.provider as NSString,
+                            "profileImageURL": authData.providerData["profileImageURL"] as! NSString,
+                            "displayName": authData.providerData["displayName"] as! NSString,
+                            "cachedUserProfile": authData.providerData["cachedUserProfile"] as! NSDictionary
+                        ] as NSDictionary
+                        myRootRef.childByAppendingPath("users").childByAppendingPath(authData.uid).setValue(newUser as AnyObject)
                         
                     }
                 })
