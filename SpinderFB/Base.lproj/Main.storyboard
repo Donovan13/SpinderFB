@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o43-WY-b80">
                                 <rect key="frame" x="246" y="512" width="108" height="30"/>
                                 <state key="normal" title="Facebook Login"/>
+                                <connections>
+                                    <action selector="facebookLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jL4-Z4-nIZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -32,7 +35,7 @@
         <!--Activity View Controller-->
         <scene sceneID="BqB-KU-eH7">
             <objects>
-                <viewController id="wIS-IO-06P" customClass="ActivityViewController" customModule="Spinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wIS-IO-06P" customClass="ActivityViewController" customModule="SpinderFB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Baq-Jj-pma"/>
                         <viewControllerLayoutGuide type="bottom" id="NAK-Sw-Ye8"/>
@@ -154,7 +157,7 @@
         <!--Spinders Collection View Controller-->
         <scene sceneID="Rze-ZK-FLk">
             <objects>
-                <collectionViewController id="LGc-iP-o9F" customClass="SpindersCollectionViewController" customModule="Spinder" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="LGc-iP-o9F" customClass="SpindersCollectionViewController" customModule="SpinderFB" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kpV-JY-xfx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +168,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gx1-6H-lcN" customClass="SpinderCell" customModule="Spinder" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gx1-6H-lcN" customClass="SpinderCell" customModule="SpinderFB" customModuleProvider="target">
                                 <rect key="frame" x="1" y="0.0" width="598" height="434"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

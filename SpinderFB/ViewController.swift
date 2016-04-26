@@ -7,18 +7,52 @@
 //
 
 import UIKit
+import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginButton: FBSDKLoginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        loginButton.center = self.view.center
-        view.addSubview(loginButton)
+        //        let loginButton: FBSDKLoginButton = FBSDKLoginButton()
+        //        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        //        loginButton.center = self.view.center
+        //        view.addSubview(loginButton)
+        //
+    }
+    
+    @IBAction func facebookLogin(sender: AnyObject) {
+        let myRootRef = Firebase(url: "https://spinderfb.firebaseio.com/")
+        let facebookLogin = FBSDKLoginManager()
         
+        print("logging in")
+        
+        facebookLogin.logInWithReadPermissions(["email", "public_profile", "user_friends"], fromViewController: self, handler: {(facebookResult, facebookError) -> Void in
+            if facebookError != nil {
+                print("FB/log in error")
+            } else if facebookResult.isCancelled {
+                print("FB/log in cancelled")
+            } else {
+                let acessToken = FBSDKAccessToken.currentAccessToken().tokenString
+                myRootRef.authWithOAuthProvider("facebook", token: acessToken, withCompletionBlock: { error, authData in
+                    if error != nil {
+                        print("login failed.")
+                    } else {
+                        print("logged in ")
+                        
+                        let newUser = [
+                            "provider": authData.provider,
+                            "profileImageURL": authData.providerData["profileImageURL"] as? NSString as? String,
+                            "displayName": authData.providerData["displayName"] as? NSString as? String
+                        ]
+                        myRootRef.childByAppendingPath("users").childByAppendingPath(authData.uid).setValue(newUser)
+                        
+                    }
+                })
+                
+            }
+        })
     }
     
 }
